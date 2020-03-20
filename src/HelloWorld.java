@@ -1,11 +1,28 @@
+import java.util.Scanner;
+
 public class HelloWorld {
     public static void main(String[] args){
         System.out.println("Hello World!");
 
-
+        Scanner scanner = new Scanner(System.in);
 
 
         double pi = 3.14159;
+
+        System.out.printf("The value of pi is approximately %.2f.\n", pi);
+
+//        System.out.print("Enter integer: ");
+//        int userInput = scanner.nextInt();
+//
+//        System.out.println("You entered: --> \"" + userInput + "\" <--");
+
+        System.out.print("Enter three words: ");
+        String i1 = scanner.next();
+//        String i2 = scanner.next();
+//        String i3 = scanner.next();
+
+        System.out.format("Word one: %s", i1);
+
 
 //        int myFavoriteNumber = 7;
 //        String myString = "Josh";
