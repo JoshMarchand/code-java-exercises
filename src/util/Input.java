@@ -1,7 +1,7 @@
 package util;
 
 public class Input {
-    Scanner
+//    Scanner
 
     public Input(){
     }
