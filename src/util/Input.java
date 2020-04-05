@@ -4,7 +4,7 @@ import java.util.Objects;
 import java.util.Scanner;
 
 public class Input {
-    private static Scanner scanner;
+    public static Scanner scanner = new Scanner(System.in);
 
     public static void setScanner() {
         if (scanner == null) {
@@ -12,10 +12,10 @@ public class Input {
         }
     }
 
-    public Input() {
-        scanner = new Scanner(System.in);
-        System.out.println("hi from constructor");
-    }
+//    public Input() {
+//        scanner = new Scanner(System.in);
+//        System.out.println("hi from constructor");
+//    }
 
     public String getString(String prompt) {
         if (prompt == null) {
@@ -34,12 +34,11 @@ public class Input {
 //        return
 //    }
 
-    public boolean yesNo(String prompt) {
+    public static boolean yesNo(String prompt) {
         System.out.println(Objects.requireNonNullElse(prompt, "Enter a boolean: "));
         boolean b = scanner.nextLine().toLowerCase().contains("y");
-        if (!b)
-            yesNo(prompt);
-        return b;
+
+        return !!b;
     }
 
     public int getInt() {
