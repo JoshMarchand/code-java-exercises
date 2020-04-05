@@ -1,6 +1,6 @@
 package shapes;
 
-public class Rectangle {
+class Rectangle {
     private double length;
     private double width;
 //comment2

@@ -1,12 +1,11 @@
 package util;
 
+import java.util.Scanner;
+
 public class Input {
-//    Scanner
+    private Scanner scanner;
 
-    public Input(){
-    }
-
-    public static void main(String[] args) {
-        Input scan = new Input();
-    }
+//    public Input (){
+//        scanner = new Scanner();
+//    }
 }
