@@ -4,18 +4,24 @@ public class ShapesTest {
     public static void main(String[] args) {
         Rectangle box1 = new Rectangle(5, 4);
 
-        System.out.printf("perim: %f", box1.getPerimeter());
+        Measurable myShape;
+
+
+        myShape = new Square(5);
+
+        System.out.printf("perim: %f", myShape.getPerimeter());
         System.out.println();
-        System.out.printf("area: %f", box1.getArea());
+        System.out.printf("area: %f", myShape.getArea());
         System.out.println();
 
-        Rectangle box2 = new Square(5);
+        myShape = new Rectangle(5, 6);
 
-        System.out.printf("perim: %f", box2.getPerimeter());
+        System.out.printf("perim: %f", myShape.getPerimeter());
         System.out.println();
-        System.out.printf("area: %f", box2.getArea());
+        System.out.printf("area: %f", myShape.getArea());
         System.out.println();
 
+//        System.out.println(myShape.getWidth());
 
     }
 }
