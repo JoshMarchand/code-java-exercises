@@ -1,5 +1,6 @@
 import java.util.Random;
 
+// selects one from each and outputs a name
 public class ServerNameGenerator {
     static Random rand = new Random();
     static String[] race = {"orc", "human", "blood elf", "tauren", "pandaren", "draenei", "undead", "troll", "gnome", "dwarf", "worgen", "goblin"};
